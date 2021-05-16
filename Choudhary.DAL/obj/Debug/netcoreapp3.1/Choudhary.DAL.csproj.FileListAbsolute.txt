@@ -1,0 +1,12 @@
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/bin/Debug/netcoreapp3.1/Choudhary.DAL.deps.json
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/bin/Debug/netcoreapp3.1/Choudhary.DAL.runtimeconfig.json
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/bin/Debug/netcoreapp3.1/Choudhary.DAL.runtimeconfig.dev.json
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/bin/Debug/netcoreapp3.1/Choudhary.DAL.dll
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/bin/Debug/netcoreapp3.1/Choudhary.DAL.pdb
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.csprojAssemblyReference.cache
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.AssemblyInfoInputs.cache
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.AssemblyInfo.cs
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.csproj.CoreCompileInputs.cache
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.dll
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.pdb
+/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.genruntimeconfig.cache
