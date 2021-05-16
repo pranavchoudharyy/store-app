@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/Choudhary.DAL.csproj": {}
+    "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {}
   },
   "projects": {
-    "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/Choudhary.DAL.csproj": {
+    "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/Choudhary.DAL.csproj",
+        "projectUniqueName": "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj",
         "projectName": "Choudhary.DAL",
-        "projectPath": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/Choudhary.DAL.csproj",
+        "projectPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj",
         "packagesPath": "/Users/pranavchoudhary/.nuget/packages/",
-        "outputPath": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/obj/",
+        "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"

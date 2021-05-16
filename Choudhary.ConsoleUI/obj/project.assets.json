@@ -5089,11 +5089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj",
+      "projectUniqueName": "/Users/pranavchoudhary/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj",
       "projectName": "Choudhary.ConsoleUI",
-      "projectPath": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj",
+      "projectPath": "/Users/pranavchoudhary/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj",
       "packagesPath": "/Users/pranavchoudhary/.nuget/packages/",
-      "outputPath": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.ConsoleUI/obj/",
+      "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.ConsoleUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
@@ -5108,8 +5108,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/Choudhary.DAL.csproj": {
-              "projectPath": "/Users/pranavchoudhary/store-app/Choudhary/Choudhary.DAL/Choudhary.DAL.csproj"
+            "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
+              "projectPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj"
             }
           }
         }

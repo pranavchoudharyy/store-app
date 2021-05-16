@@ -1,6 +1,12 @@
 ﻿using System;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
+using Microsoft.Extensions.Configuration.FileExtensions;
+
+
 
 namespace Choudhary.DAL.Models
 {
@@ -22,10 +28,15 @@ namespace Choudhary.DAL.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            var builder = new ConfigurationBuilder()
+                         .SetBasePath(Directory.GetCurrentDirectory())
+                         .AddJsonFile("appsettings.json");
+            IConfigurationRoot config = builder.Build();
+            var connectionString = config.GetConnectionString("ChoudharyDBConnectionString");
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=localhost,1433;Initial Catalog=ChoudharyDB;Persist Security Info=False;User ID=sa;Password=Pranav@31;MultipleActiveResultSets=False;TrustServerCertificate=False;Connection Timeout=30;");
+                // #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer(connectionString);
             }
         }
 
