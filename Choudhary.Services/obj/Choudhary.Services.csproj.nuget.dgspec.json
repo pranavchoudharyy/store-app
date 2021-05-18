@@ -14,7 +14,7 @@
         "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
+          "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -90,7 +90,7 @@
         "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
+          "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

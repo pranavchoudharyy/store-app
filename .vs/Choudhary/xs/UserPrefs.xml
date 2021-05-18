@@ -1,29 +1,17 @@
 ﻿<Properties StartupConfiguration="{4D9862CA-A52B-4B83-A970-AC6519C62200}|Default">
   <MonoDevelop.Ide.ItemProperties.Choudhary.ConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Choudhary.DAL/Models/ChoudharyDBContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Choudhary.DAL/appsettings.json">
     <Files>
-      <File FileName="Choudhary.Services/Controllers/CategoriesController.cs" Line="21" Column="14" />
-      <File FileName="Choudhary.Services/appsettings.json" Line="10" Column="1" />
-      <File FileName="Choudhary.DAL/appsettings.json" Line="3" Column="36" />
-      <File FileName="Choudhary.DAL/Models/ChoudharyDBContext.cs" Line="1" Column="1" />
+      <File FileName="Choudhary.DAL/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Choudhary" expanded="True">
-            <Node name="Choudhary.DAL" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="ChoudharyDBContext.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="Choudhary.Services" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
+            <Node name="Choudhary.DAL" expanded="True" />
+            <Node name="Choudhary.Services" selected="True" />
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

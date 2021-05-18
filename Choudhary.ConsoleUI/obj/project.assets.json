@@ -5096,7 +5096,7 @@
       "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.ConsoleUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
+        "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
