@@ -8,15 +8,16 @@ namespace Choudhary.DAL
 {
     public class ChoudharyRepository
     {
-        ChoudharyDBContext context;
+        ChoudharyContext context;
         public ChoudharyRepository()
         {
-            context = new ChoudharyDBContext();
+            context = new ChoudharyContext();
 
         }
-        public List<Categories> GetAllCategories()
+
+        public List<Category> GetAllCategories()
         {
-            List<Categories> categoriesList = context.Categories.ToList();
+            List<Category> categoriesList = context.Categories.ToList();
             return categoriesList;
 
         }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pranavchoudhary/store-app/Choudhary.Services/Choudhary.Services.csproj": {}
+    "/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/Choudhary.Services.csproj": {}
   },
   "projects": {
-    "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
+    "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj",
+        "projectUniqueName": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj",
         "projectName": "Choudhary.DAL",
-        "projectPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj",
+        "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj",
         "packagesPath": "/Users/pranavchoudhary/.nuget/packages/",
-        "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/obj/",
+        "outputPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
+          "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -40,25 +40,25 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -76,21 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pranavchoudhary/store-app/Choudhary.Services/Choudhary.Services.csproj": {
+    "/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/Choudhary.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pranavchoudhary/store-app/Choudhary.Services/Choudhary.Services.csproj",
+        "projectUniqueName": "/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/Choudhary.Services.csproj",
         "projectName": "Choudhary.Services",
-        "projectPath": "/Users/pranavchoudhary/store-app/Choudhary.Services/Choudhary.Services.csproj",
+        "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/Choudhary.Services.csproj",
         "packagesPath": "/Users/pranavchoudhary/.nuget/packages/",
-        "outputPath": "/Users/pranavchoudhary/store-app/Choudhary.Services/obj/",
+        "outputPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
+          "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -102,8 +102,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
-                "projectPath": "/Users/pranavchoudhary/store-app/Choudhary.DAL/Choudhary.DAL.csproj"
+              "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
+                "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj"
               }
             }
           }
@@ -135,7 +135,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
