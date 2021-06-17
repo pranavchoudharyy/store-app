@@ -1,6 +1,3 @@
--- create database ChoudharyDB;
--- use ChoudharyDB;
--- drop database ChoudharyDB
 CREATE TABLE Categories
 (
     CategoryId INT CONSTRAINT pk_CategoryId PRIMARY KEY IDENTITY,
@@ -8,7 +5,7 @@ CREATE TABLE Categories
     CategoryName VARCHAR(20) CONSTRAINT uq_CategoryName UNIQUE NOT NULL
 )
 GO
-drop table Categories
+-- drop table Categories
 INSERT INTO Categories VALUES (2329 , 'Cement')
 INSERT INTO Categories VALUES (2330, 'Iron')
 SELECT * FROM Categories
@@ -22,7 +19,12 @@ CREATE TABLE Products(
 )
 GO
 -- drop table Products
--- INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P104','Tehri TMT BAR 12MM',2,5900.00,30.00)
+INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P100','Acc Suraksha',1,390.00,800)
+INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P101','Acc Concrete+',1,425.00,500)
+INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P102','Acc Gold',1,460.00,300)
+INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P103','Tehri TMT BAR 10 MM',2,6150.00,20)
+INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P104','Tehri TMT BAR 12 MM',2,5900.00,30)
+
 Select * from Products
 -- drop table Products
 
