@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -10,11 +11,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ViewCategoryComponent } from './view-category/view-category.component';
 import { CategoryService } from 'src/services/ChoudharyServices/category.service';
+import { ViewProductComponent } from './view-product/view-product.component';
+import { ViewCustomerComponent } from './view-customer/view-customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewCategoryComponent
+    ViewCategoryComponent,
+    ViewProductComponent,
+    ViewCustomerComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { CategoryService } from 'src/services/ChoudharyServices/category.service
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSidenavModule
+    MatSidenavModule,
+    HttpClientModule
   ],
   providers: [CategoryService],
   bootstrap: [AppComponent]

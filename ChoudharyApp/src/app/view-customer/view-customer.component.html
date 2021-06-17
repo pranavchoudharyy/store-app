@@ -1,0 +1,22 @@
+<div style="text-align:center;">
+    <h1>Customers</h1>
+    <div class="table-responsive">
+        <table class="table" style="border:5px solid rgba(220,230,242,1);" *ngIf="customers">
+            <tr style="background-color:rgba(220,230,242,1); font-size:12pt">
+                <th>Customer Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+            <tr *ngFor="let customer of customers" style="background-color:white">
+                <td> {{customer.name}} </td>
+                <td> {{customer.emailId}} </td>
+                <td> {{customer.phone}}</td>
+                <td>{{customer.address}}</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="showMsgDiv">
+        <h4 class="jumbotron" style="text-align:center;">No Customers available</h4>
+    </div>
+</div>

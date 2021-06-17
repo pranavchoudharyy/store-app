@@ -6,23 +6,26 @@ import { CategoryService } from 'src/services/ChoudharyServices/category.service
   templateUrl: './view-category.component.html',
   styleUrls: ['./view-category.component.css']
 })
-export class ViewCategoryComponent implements OnInit {
-  categories: any;
+export class ViewCategoryComponent implements OnInit 
+{
+  categories: ICategory[];
   showMsgDiv: boolean = false;
-  private _categoryService : any;
+  
 
-  constructor() {}
+  constructor(private _categoryService : CategoryService) 
+  {
+    this.categories =[]
+  }
 
   ngOnInit()
   {
-    this.getCategories();
-
+    this.getCategory();
   }
-  getCategories() {
-    this._categoryService.getCategories().subscribe(
-      (      responseCategoryData: any) => this.categories = responseCategoryData
+  getCategory()
+  {
+    this._categoryService.getCategories().subscribe
+    (
+      res=> this.categories = res
     );
-  
-
 }
 }

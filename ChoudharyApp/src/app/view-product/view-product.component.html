@@ -1,0 +1,22 @@
+<div style="text-align:center;">
+    <h1>Products</h1>
+    <div class="table-responsive">
+        <table class="table" style="border:5px solid rgba(220,230,242,1);" *ngIf="products">
+            <tr style="background-color:rgba(220,230,242,1); font-size:12pt">
+                <th>Product Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Remaining</th>
+            </tr>
+            <tr *ngFor="let product of products" style="background-color:white">
+                <td> {{product.productId}} </td>
+                <td> {{product.productName}} </td>
+                <td> {{product.price}}</td>
+                <td>{{product.quantityAvailable}}</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="showMsgDiv">
+        <h4 class="jumbotron" style="text-align:center;">No Products Available</h4>
+    </div>
+</div>

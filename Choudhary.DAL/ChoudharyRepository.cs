@@ -22,6 +22,17 @@ namespace Choudhary.DAL
 
         }
 
+        public List<Product> GetAllProducts()
+        {
+            List<Product> productsList = context.Products.ToList();
+            return productsList;
+        }
+
+        public List<Customer> GetAllCustomers()
+        {
+            List<Customer> customersList = context.Customers.ToList();
+            return customersList;
+        }
 
     }
 }

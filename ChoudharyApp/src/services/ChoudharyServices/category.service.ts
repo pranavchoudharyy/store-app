@@ -6,11 +6,15 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CategoryService {
-  categories : any;
-  constructor(private http : HttpClient) { }
 
-  getCategories(): Observable<ICategory[]> {
+export class CategoryService {
+  categories : ICategory[];
+  constructor(private http : HttpClient) 
+  { 
+    this.categories=[];
+  }
+  getCategories() : Observable<ICategory[]> 
+  {
     let tempVar = this.http.get<ICategory[]>('https://localhost:49284/api/Categories');
     return tempVar;
   }

@@ -1,14 +1,16 @@
 <div style="text-align:center;">
-    <h1>View Categories</h1>
+    <h1>Categories</h1>
     <div class="table-responsive">
         <table class="table" style="border:5px solid rgba(220,230,242,1);" *ngIf="categories">
             <tr style="background-color:rgba(220,230,242,1); font-size:12pt">
                 <th>Category Id</th>
                 <th>Category Name</th>
+                <th>Hsn Code</th>
             </tr>
             <tr *ngFor="let category of categories" style="background-color:white">
-                <td> {{category.categoryId }} </td>
+                <td> {{category.categoryId}} </td>
                 <td> {{category.categoryName}} </td>
+                <td> {{category.hsncode}}</td>
             </tr>
         </table>
     </div>

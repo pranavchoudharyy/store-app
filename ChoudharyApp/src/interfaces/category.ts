@@ -1,5 +1,7 @@
-export interface ICategory {
-      categoryId: number;
-      categoryName: string
-    }
+export interface ICategory 
+{
+        categoryId: number;
+        hsncode : number;
+        categoryName: string
+}
     

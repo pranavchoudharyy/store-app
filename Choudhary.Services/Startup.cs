@@ -14,7 +14,8 @@ using Microsoft.Extensions.Logging;
 namespace Choudhary.Services
 {
     public class Startup
-    {
+    {   readonly string AllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +27,16 @@ namespace Choudhary.Services
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors(options => {
+                options.AddPolicy(name: AllowSpecificOrigins,
+                builder =>
+                {
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyHeader();
+                });
+            });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +52,8 @@ namespace Choudhary.Services
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(AllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {
