@@ -45,7 +45,7 @@ namespace Choudhary.DAL
                 context.SaveChanges();
                 status = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 status = false;
             }

@@ -74,7 +74,7 @@ namespace Choudhary.Services.Controllers
                     message = "Unsuccessful addition operation!";
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 message = "Some error occured, please try again!";
             }
