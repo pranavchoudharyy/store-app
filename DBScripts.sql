@@ -28,19 +28,23 @@ INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) V
 Select * from Products
 -- drop table Products
 
-CREATE TABLE Customers(
-    [Name] VARCHAR(50),
-    EmailId VARCHAR(50) CONSTRAINT pk_EmailId PRIMARY KEY,
+CREATE TABLE Customers
+(
+    [First Name] VARCHAR(50) NOT NULL,
+    [Last Name] VARCHAR(50) NOT NULL,
+    EmailId VARCHAR(50) CONSTRAINT pk_EmailId PRIMARY KEY NOT NULL,
+    [Secondary EmailId] VARCHAR(50),
     CustomerPassword VARCHAR(15) NOT NULL,
+    Phone NUMERIC NOT NULL,
+    [Secondary Phone] NUMERIC,
     Gender CHAR(1) CONSTRAINT chk_Gender CHECK (Gender IN ('F','M')),
     DateOfBirth DATE CONSTRAINT chk_DateOfBirth CHECK (DateOfBirth<GetDate()) NOT NULL,
-    [Address] VARCHAR(200) NOT NULL,
-    Phone NUMERIC 
+    [Address] VARCHAR(200)
 )
 GO
-drop table Customers
-INSERT INTO Customers VALUES('Pranav Choudhary','beniwalpranav@gmail.com','Pranav@123','M','2000-01-01','Thanabhawan',9997973370)
-INSERT INTO Customers VALUES('Aniket Choudhary','aniket@gmail.com','Aniket@123','M','2000-07-11','Thanabhawan',8218329410)
+-- drop table Customers
+INSERT INTO Customers VALUES('Pranav','Choudhary','beniwalpranav@gmail.com','','Pranav@123',9997973370,9997977033,'M','2000-01-01','Thanabhawan')
+-- INSERT INTO Customers VALUES('Aniket Choudhary','aniket@gmail.com','Aniket@123','M','2000-07-11','Thanabhawan',8218329410)
 
 SELECT * from Customers
 
@@ -53,6 +57,7 @@ CREATE TABLE Orders(
 ) 
 GO
 -- drop table Orders
-SET IDENTITY_INSERT Orders ON
-INSERT INTO Orders(PurchaseId,EmailId,ProductId,QuantityPurchased,DateOfPurchase) VALUES(1001,'beniwalpranav@gmail.com','P100',5,'2021-05-14')
+-- SET IDENTITY_INSERT Orders OFF
+INSERT INTO Orders VALUES('beniwalpranav@gmail.com','P100',5,'2021-05-14')
 Select * from Orders
+-- TRUNCATE table Orders

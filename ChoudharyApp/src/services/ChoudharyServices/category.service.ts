@@ -15,7 +15,7 @@ export class CategoryService {
   }
   getCategories() : Observable<ICategory[]> 
   {
-    let tempVar = this.http.get<ICategory[]>('https://localhost:49284/api/Categories');
+    let tempVar = this.http.get<ICategory[]>('https://localhost:49284/api/Categories/GetAllCategories');
     return tempVar;
   }
 }

@@ -9,7 +9,7 @@
                 <th>Address</th>
             </tr>
             <tr *ngFor="let customer of customers" style="background-color:white">
-                <td> {{customer.name}} </td>
+                <td> {{customer.firstName}} {{customer.lastName}}</td>
                 <td> {{customer.emailId}} </td>
                 <td> {{customer.phone}}</td>
                 <td>{{customer.address}}</td>

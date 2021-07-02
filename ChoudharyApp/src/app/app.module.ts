@@ -10,16 +10,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ViewCategoryComponent } from './view-category/view-category.component';
-import { CategoryService } from 'src/services/ChoudharyServices/category.service';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewCustomerComponent } from './view-customer/view-customer.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewCategoryComponent,
     ViewProductComponent,
-    ViewCustomerComponent
+    ViewCustomerComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +34,11 @@ import { ViewCustomerComponent } from './view-customer/view-customer.component';
     MatInputModule,
     MatFormFieldModule,
     MatSidenavModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [CategoryService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using Choudhary.DAL;
 using Choudhary.DAL.Models;
 using System.Linq;
 using System.Collections.Generic;
@@ -9,30 +10,48 @@ namespace Choudhary.DAL
     public class ChoudharyRepository
     {
         ChoudharyContext context;
+
         public ChoudharyRepository()
         {
             context = new ChoudharyContext();
 
         }
 
-        public List<Category> GetAllCategories()
+        public List<Categories> GetAllCategories()
         {
-            List<Category> categoriesList = context.Categories.ToList();
+            List<Categories> categoriesList = context.Categories.ToList();
             return categoriesList;
 
         }
 
-        public List<Product> GetAllProducts()
+        public List<Products> GetAllProducts()
         {
-            List<Product> productsList = context.Products.ToList();
+            List<Products> productsList = context.Products.ToList();
             return productsList;
         }
 
-        public List<Customer> GetAllCustomers()
+        public List<Customers> GetAllCustomers()
         {
-            List<Customer> customersList = context.Customers.ToList();
+            List<Customers> customersList = context.Customers.ToList();
             return customersList;
         }
+
+        public bool AddCustomers(Customers cust)
+        {
+            bool status;
+            try
+            {
+                context.Customers.Add(cust);
+                context.SaveChanges();
+                status = true;
+            }
+            catch (Exception ex)
+            {
+                status = false;
+            }
+            return status;
+        }
+        
 
     }
 }

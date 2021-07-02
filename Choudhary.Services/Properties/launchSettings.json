@@ -4,15 +4,15 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:57860",
-      "sslPort": 44304
+      "applicationUrl": "http://localhost:49384",
+      "sslPort": 49384
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/Categories",
+      "launchUrl": "api/Customers/GetAllCustomers",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "Choudhary.Services": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Categories",
+      "launchUrl": "api/Customers/GetAllCustomers",
       "applicationUrl": "https://localhost:49284;http://localhost:17017",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

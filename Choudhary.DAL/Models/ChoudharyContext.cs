@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 
-#nullable disable
-
 namespace Choudhary.DAL.Models
 {
     public partial class ChoudharyContext : DbContext
@@ -19,16 +17,16 @@ namespace Choudhary.DAL.Models
         {
         }
 
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Customer> Customers { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Categories> Categories { get; set; }
+        public virtual DbSet<Customers> Customers { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<Products> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var builder = new ConfigurationBuilder()
-                         .SetBasePath(Directory.GetCurrentDirectory())
-                         .AddJsonFile("appsettings.json");
+                          .SetBasePath(Directory.GetCurrentDirectory())
+                          .AddJsonFile("appsettings.json");
             IConfigurationRoot config = builder.Build();
             var connectionString = config.GetConnectionString("ChoudharyConnectionString");
             if (!optionsBuilder.IsConfigured)
@@ -36,15 +34,18 @@ namespace Choudhary.DAL.Models
                 // #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer(connectionString);
             }
-    }
+
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
-
-            modelBuilder.Entity<Category>(entity =>
+            modelBuilder.Entity<Categories>(entity =>
             {
-                entity.HasIndex(e => e.CategoryName, "uq_CategoryName")
+                entity.HasKey(e => e.CategoryId)
+                    .HasName("pk_CategoryId");
+
+                entity.HasIndex(e => e.CategoryName)
+                    .HasName("uq_CategoryName")
                     .IsUnique();
 
                 entity.Property(e => e.CategoryName)
@@ -55,7 +56,7 @@ namespace Choudhary.DAL.Models
                 entity.Property(e => e.Hsncode).HasColumnName("HSNCode");
             });
 
-            modelBuilder.Entity<Customer>(entity =>
+            modelBuilder.Entity<Customers>(entity =>
             {
                 entity.HasKey(e => e.EmailId)
                     .HasName("pk_EmailId");
@@ -65,7 +66,6 @@ namespace Choudhary.DAL.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.Address)
-                    .IsRequired()
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
@@ -76,19 +76,36 @@ namespace Choudhary.DAL.Models
 
                 entity.Property(e => e.DateOfBirth).HasColumnType("date");
 
+                entity.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasColumnName("First Name")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Gender)
                     .HasMaxLength(1)
                     .IsUnicode(false)
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
-                entity.Property(e => e.Name)
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasColumnName("Last Name")
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Phone).HasColumnType("numeric(18, 0)");
+
+                entity.Property(e => e.SecondaryEmailId)
+                    .HasColumnName("Secondary EmailId")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.SecondaryPhone)
+                    .HasColumnName("Secondary Phone")
+                    .HasColumnType("numeric(18, 0)");
             });
 
-            modelBuilder.Entity<Order>(entity =>
+            modelBuilder.Entity<Orders>(entity =>
             {
                 entity.HasKey(e => e.PurchaseId)
                     .HasName("pk_PurchaseId");
@@ -102,7 +119,7 @@ namespace Choudhary.DAL.Models
                 entity.Property(e => e.ProductId)
                     .HasMaxLength(4)
                     .IsUnicode(false)
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
                 entity.HasOne(d => d.Email)
                     .WithMany(p => p.Orders)
@@ -115,15 +132,19 @@ namespace Choudhary.DAL.Models
                     .HasConstraintName("fk_ProductId");
             });
 
-            modelBuilder.Entity<Product>(entity =>
+            modelBuilder.Entity<Products>(entity =>
             {
-                entity.HasIndex(e => e.ProductName, "UQ__Products__DD5A978A62DA26A6")
+                entity.HasKey(e => e.ProductId)
+                    .HasName("pk_ProductId");
+
+                entity.HasIndex(e => e.ProductName)
+                    .HasName("UQ__Products__DD5A978A62DA26A6")
                     .IsUnique();
 
                 entity.Property(e => e.ProductId)
                     .HasMaxLength(4)
                     .IsUnicode(false)
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
                 entity.Property(e => e.Price).HasColumnType("numeric(8, 0)");
 

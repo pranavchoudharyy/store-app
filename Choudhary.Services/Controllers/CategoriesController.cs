@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Choudhary.Services.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class CategoriesController : Controller
     {
         ChoudharyRepository repository;
@@ -24,7 +25,7 @@ namespace Choudhary.Services.Controllers
         [HttpGet]
         public JsonResult GetAllCategories()
         {
-            List<Category> categories = new List<Category>();
+            List<Categories> categories = new List<Categories>();
             try
             {
                 categories = repository.GetAllCategories();

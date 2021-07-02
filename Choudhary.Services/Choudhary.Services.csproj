@@ -9,5 +9,8 @@
     <ProjectReference Include="..\Choudhary.DAL\Choudhary.DAL.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Choudhary.ConsoleUI\Choudhary.ConsoleUI.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

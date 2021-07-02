@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Choudhary.Services.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class ProductsController : Controller
     {
         ChoudharyRepository repository;
@@ -22,7 +23,7 @@ namespace Choudhary.Services.Controllers
         [HttpGet]
         public JsonResult GetAllProducts()
         {
-            List<Product> products = new List<Product>();
+            List<Products> products = new List<Products>();
             try
             {
                 products = repository.GetAllProducts();

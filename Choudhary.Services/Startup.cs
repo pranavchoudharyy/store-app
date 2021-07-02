@@ -45,8 +45,8 @@ namespace Choudhary.Services
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
 
+            }
             app.UseHttpsRedirection();
 
             app.UseRouting();

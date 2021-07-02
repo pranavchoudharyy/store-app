@@ -17,7 +17,7 @@ export class CustomerService
   }
   getCustomers() : Observable<ICustomer[]>
   {
-    let tempVar = this.http.get<ICustomer[]>('https://localhost:49284/api/Customers');
+    let tempVar = this.http.get<ICustomer[]>('https://localhost:49284/api/Customers/GetAllCustomers');
     return tempVar;
   }
 

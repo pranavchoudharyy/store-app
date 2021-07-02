@@ -16,7 +16,7 @@ export class ProductService {
   }
   getproducts() : Observable<IProduct[]>
   {
-    let tempVar = this.http.get<IProduct[]>('https://localhost:49284/api/Products');
+    let tempVar = this.http.get<IProduct[]>('https://localhost:49284/api/Products/GetAllProducts');
     return tempVar;
 
   }

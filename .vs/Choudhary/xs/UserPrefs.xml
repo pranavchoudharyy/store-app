@@ -2,29 +2,22 @@
   <MonoDevelop.Ide.ItemProperties.Choudhary.ConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Choudhary.Services/Properties/launchSettings.json">
     <Files>
-      <File FileName="Choudhary.Services/Controllers/CategoriesController.cs" Line="37" Column="10" />
-      <File FileName="Choudhary.Services/appsettings.json" Line="11" Column="15" />
-      <File FileName="Choudhary.DAL/ChoudharyRepository.cs" Line="37" Column="6" />
-      <File FileName="Choudhary.DAL/appsettings.json" Line="3" Column="15" />
-      <File FileName="Choudhary.ConsoleUI/Program.cs" Line="20" Column="6" />
-      <File FileName="Choudhary.DAL/Models/Category.cs" Line="22" Column="1" />
-      <File FileName="Choudhary.DAL/Models/ChoudharyContext.cs" Line="33" Column="73" />
-      <File FileName="Choudhary.DAL/Models/Product.cs" Line="1" Column="1" />
-      <File FileName="Choudhary.DAL/Models/Order.cs" Line="1" Column="1" />
-      <File FileName="Choudhary.DAL/Models/Customer.cs" Line="1" Column="1" />
-      <File FileName="Choudhary.Services/Startup.cs" Line="37" Column="20" />
-      <File FileName="Choudhary.Services/Controllers/ProductsController.cs" Line="21" Column="1" />
-      <File FileName="Choudhary.Services/Controllers/CustomersController.cs" Line="25" Column="42" />
-      <File FileName="Choudhary.Services/Controllers/WeatherForecastController.cs" Line="39" Column="4" />
-      <File FileName="Choudhary.Services/Properties/launchSettings.json" Line="15" Column="35" />
+      <File FileName="Choudhary.DAL/appsettings.json" Line="11" Column="113" />
+      <File FileName="Choudhary.DAL/ChoudharyRepository.cs" Line="42" Column="16" />
+      <File FileName="Choudhary.ConsoleUI/Program.cs" Line="11" Column="74" />
+      <File FileName="Choudhary.DAL/Models/ChoudharyContext.cs" Line="28" Column="61" />
+      <File FileName="Choudhary.DAL/Models/Customers.cs" Line="1" Column="1" />
+      <File FileName="Choudhary.DAL/Models/Orders.cs" Line="1" Column="1" />
+      <File FileName="Choudhary.DAL/Models/Products.cs" Line="1" Column="1" />
+      <File FileName="Choudhary.Services/appsettings.json" Line="11" Column="113" />
+      <File FileName="Choudhary.Services/Controllers/CustomersController.cs" Line="82" Column="10" />
+      <File FileName="Choudhary.Services/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Choudhary" expanded="True">
-            <Node name="Choudhary.DAL" expanded="True">
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="Choudhary.DAL" expanded="True" />
             <Node name="Choudhary.Services" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Properties" expanded="True">

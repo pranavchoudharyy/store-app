@@ -6,11 +6,11 @@ using Choudhary.DAL;
 using Choudhary.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Choudhary.Services.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class CustomersController : Controller
     {
         ChoudharyRepository repository;
@@ -24,7 +24,7 @@ namespace Choudhary.Services.Controllers
         [HttpGet]
         public JsonResult GetAllCustomers()
         {
-            List<Customer> customers = new List<Customer>();
+            List<Customers> customers = new List<Customers>();
             try
             {
                 customers = repository.GetAllCustomers();
@@ -34,6 +34,51 @@ namespace Choudhary.Services.Controllers
                 customers = null;
             }
             return Json(customers);
+        }
+
+        [HttpPost]
+        public JsonResult InsertCustomers(DAL.Models.Customers customer)
+        {
+            Customers custObj = new Customers();
+            bool status = false;
+            string message;
+
+            try
+            {
+                if (customer != null)
+                {
+                    custObj.FirstName = customer.FirstName;
+                    custObj.LastName = customer.LastName;
+                    custObj.EmailId = customer.EmailId;
+                    custObj.SecondaryEmailId = customer.SecondaryEmailId;
+                    custObj.CustomerPassword = customer.CustomerPassword;
+                    custObj.Phone = customer.Phone;
+                    custObj.SecondaryPhone = customer.SecondaryPhone;
+                    custObj.Gender = customer.Gender;
+                    custObj.DateOfBirth = customer.DateOfBirth;
+                    custObj.Address = customer.Address;
+                }
+                else
+                {
+                    custObj = null;
+                }
+
+                status = repository.AddCustomers(custObj);
+
+                if (status)
+                {
+                    message = "Successful addition operation";
+                }
+                else
+                {
+                    message = "Unsuccessful addition operation!";
+                }
+            }
+            catch (Exception ex)
+            {
+                message = "Some error occured, please try again!";
+            }
+            return Json(message);
         }
 
     }

@@ -4,6 +4,62 @@
     "/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/Choudhary.Services.csproj": {}
   },
   "projects": {
+    "/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj",
+        "projectName": "Choudhary.ConsoleUI",
+        "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj",
+        "packagesPath": "/Users/pranavchoudhary/.nuget/packages/",
+        "outputPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
+                "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -40,25 +96,25 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -102,6 +158,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj": {
+                "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/Choudhary.ConsoleUI.csproj"
+              },
               "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj": {
                 "projectPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/Choudhary.DAL.csproj"
               }
