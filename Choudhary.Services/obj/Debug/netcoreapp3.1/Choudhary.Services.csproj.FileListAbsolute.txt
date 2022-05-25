@@ -85,3 +85,4 @@
 /Users/pranavchoudhary/Repos/store-app/Choudhary.Services/bin/Debug/netcoreapp3.1/Choudhary.ConsoleUI.runtimeconfig.dev.json
 /Users/pranavchoudhary/Repos/store-app/Choudhary.Services/bin/Debug/netcoreapp3.1/Choudhary.ConsoleUI.dll
 /Users/pranavchoudhary/Repos/store-app/Choudhary.Services/bin/Debug/netcoreapp3.1/Choudhary.ConsoleUI.pdb
+/Users/pranavchoudhary/Repos/store-app/Choudhary.Services/obj/Debug/netcoreapp3.1/Choudhary.Services.GeneratedMSBuildEditorConfig.editorconfig

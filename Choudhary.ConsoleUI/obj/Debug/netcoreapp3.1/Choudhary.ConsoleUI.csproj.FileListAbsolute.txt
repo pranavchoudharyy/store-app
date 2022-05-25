@@ -151,3 +151,4 @@
 /Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
 /Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/pranavchoudhary/Repos/store-app/Choudhary.ConsoleUI/obj/Debug/netcoreapp3.1/Choudhary.ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig

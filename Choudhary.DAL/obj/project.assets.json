@@ -5148,7 +5148,7 @@
       "outputPath": "/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pranavchoudhary/.nuget/NuGet/NuGet.Config"
+        "/Users/pranavchoudhary/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5210,7 +5210,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
       }
     }
   }

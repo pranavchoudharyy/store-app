@@ -34,3 +34,4 @@
 /Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.dll
 /Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.pdb
 /Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.genruntimeconfig.cache
+/Users/pranavchoudhary/Repos/store-app/Choudhary.DAL/obj/Debug/netcoreapp3.1/Choudhary.DAL.GeneratedMSBuildEditorConfig.editorconfig

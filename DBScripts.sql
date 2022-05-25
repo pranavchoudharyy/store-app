@@ -24,6 +24,7 @@ INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) V
 INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P102','Acc Gold',1,460.00,300)
 INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P103','Tehri TMT BAR 10 MM',2,6150.00,20)
 INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P104','Tehri TMT BAR 12 MM',2,5900.00,30)
+INSERT INTO Products(ProductId,ProductName,CategoryId,Price,QuantityAvailable) VALUES('P105','Lafarge Duraguard',1,380.00,250)
 
 Select * from Products
 -- drop table Products
@@ -43,8 +44,8 @@ CREATE TABLE Customers
 )
 GO
 -- drop table Customers
-INSERT INTO Customers VALUES('Pranav','Choudhary','beniwalpranav@gmail.com','','Pranav@123',9997973370,9997977033,'M','2000-01-01','Thanabhawan')
--- INSERT INTO Customers VALUES('Aniket Choudhary','aniket@gmail.com','Aniket@123','M','2000-07-11','Thanabhawan',8218329410)
+--INSERT INTO Customers VALUES('Pranav','Choudhary','beniwalpranav@gmail.com','','Pranav@123',9997973370,9997977033,'M','2000-01-01','Thanabhawan')
+INSERT INTO Customers VALUES('Aniket','Choudhary','aniket@gmail.com','','Aniket@123',8218329410,8218329432,'M','2004-07-11','Thanabhawan')
 
 SELECT * from Customers
 
@@ -58,6 +59,6 @@ CREATE TABLE Orders(
 GO
 -- drop table Orders
 -- SET IDENTITY_INSERT Orders OFF
-INSERT INTO Orders VALUES('beniwalpranav@gmail.com','P100',5,'2021-05-14')
+INSERT INTO Orders VALUES('aniket@gmail.com','P105',3,'2021-09-15')
 Select * from Orders
 -- TRUNCATE table Orders
